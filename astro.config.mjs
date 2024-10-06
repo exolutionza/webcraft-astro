@@ -6,5 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [icon(), tailwind()]
+  integrations: [icon(), tailwind()],
+  site: 'https://exolutionza.github.io',
+  base: 'webcraft-astro',
 });
