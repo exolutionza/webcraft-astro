@@ -1,112 +1,30 @@
----
-import { Icon } from 'astro-icon/components'
----
-<section class="relative py-20 sm:py-24 lg:py-32 bg-gray-50 dark:bg-slate-800" id="contact">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
-        Let's Craft Your Digital Success Story
-      </h2>
-      <p class="max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
-        Ready to elevate your online presence? We're just a click or a call away. Reach out and let's turn your web vision into reality.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8 mb-16">
-      <div class="bg-white dark:bg-slate-700 p-6 rounded-xl shadow-lg text-center">
-        <Icon name="tabler:mail" class="w-12 h-12 text-blue-500 mx-auto mb-4" />
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Email Us</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Drop us a line anytime</p>
-        <a 
-          href="mailto:hello@webcraft.com" 
-          class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
-        >
-          hello@webcraft.com
-        </a>
-      </div>
-      <div class="bg-white dark:bg-slate-700 p-6 rounded-xl shadow-lg text-center">
-        <Icon name="tabler:phone" class="w-12 h-12 text-green-500 mx-auto mb-4" />
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Call Us</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Let's talk about your project</p>
-        <a 
-          href="tel:+27123456789" 
-          class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-300 ease-in-out"
-        >
-          +27 12 345 6789
-        </a>
-      </div>
-      <div class="bg-white dark:bg-slate-700 p-6 rounded-xl shadow-lg text-center">
-        <Icon name="tabler:brand-whatsapp" class="w-12 h-12 text-emerald-500 mx-auto mb-4" />
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">WhatsApp</h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Chat with us instantly</p>
-        <a 
-          href="https://wa.me/27123456789" 
-          class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 transition duration-300 ease-in-out"
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          Message Us
-        </a>
-      </div>
-    </div>
-    
-    <!-- Updated Contact Form -->
-    <div class="bg-white dark:bg-slate-700 p-8 rounded-xl shadow-lg">
-      <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Contact Us</h3>
-      <form id="contactForm" class="space-y-6">
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
-          <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-600 dark:border-slate-500 dark:text-white">
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-          <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-600 dark:border-slate-500 dark:text-white">
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
-          <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-600 dark:border-slate-500 dark:text-white"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Send Message
-          </button>
-        </div>
-      </form>
-      <!-- Feedback message container -->
-      <div id="feedbackMessage" class="mt-4 p-4 rounded-md hidden"></div>
-    </div>
-
-    <div class="mt-16 text-center">
-      <p class="text-xl text-gray-600 dark:text-gray-300">
-        Whether you prefer email, a phone call, or a quick WhatsApp message, we're here to listen and help. Let's collaborate to create a website that not only meets but exceeds your expectations.
-      </p>
-      <p class="mt-4 text-lg text-gray-500 dark:text-gray-400">
-        Our team is available Monday to Friday, 9:00 AM - 6:00 PM SAST
-      </p>
-    </div>
-  </div>
-</section>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
+    const form = document.getElementById('contactForm') as HTMLFormElement;
     const feedbackMessage = document.getElementById('feedbackMessage');
 
-    function showFeedback(message, isSuccess) {
-      feedbackMessage.textContent = message;
-      feedbackMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
-      if (isSuccess) {
-        feedbackMessage.classList.add('bg-green-100', 'text-green-800');
-      } else {
-        feedbackMessage.classList.add('bg-red-100', 'text-red-800');
+    function showFeedback(message: string, isSuccess: boolean) {
+      if (feedbackMessage) {
+        feedbackMessage.textContent = message;
+        feedbackMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
+        if (isSuccess) {
+          feedbackMessage.classList.add('bg-green-100', 'text-green-800');
+        } else {
+          feedbackMessage.classList.add('bg-red-100', 'text-red-800');
+        }
       }
     }
 
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
       
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+      const nameInput = document.getElementById('name') as HTMLInputElement;
+      const emailInput = document.getElementById('email') as HTMLInputElement;
+      const messageInput = document.getElementById('message') as HTMLTextAreaElement;
+
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const message = messageInput.value;
 
       // Replace 'YOUR_API_KEY' with your actual Brevo API key
       const apiKey = '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';
@@ -142,7 +60,7 @@ import { Icon } from 'astro-icon/components'
         }
       } catch (error) {
         console.error('Error:', error);
-        showFeedback(`There was an error sending your message: ${error.message}. Please try again later.`, false);
+        showFeedback(`There was an error sending your message. Please try again later.`, false);
       }
     });
   });
