@@ -1,0 +1,51 @@
+---
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import HeroSection from './Hero.astro';
+import FeaturesSection from './Features.astro';
+import ComparisonSection from './Comparison.astro';
+import PricingSection from './Pricing.astro';
+import EmailServicesSection from './Email.astro';
+import DomainSearchSection from './DomainSearch.astro';
+import PageSpeedSection from './PageSpeed.astro';
+import ContactSection from './Contact.astro';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>WebCraft - Modern Web Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="font-sans antialiased text-gray-900 bg-white">
+    <Header />
+    <main>
+      <HeroSection />
+      <FeaturesSection />
+      <ComparisonSection />
+      <PricingSection />
+      <EmailServicesSection />
+      <DomainSearchSection />
+      <PageSpeedSection />
+      <ContactSection />
+    </main>
+    <Footer />
+  </body>
+</html>

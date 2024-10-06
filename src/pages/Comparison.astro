@@ -1,0 +1,71 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+<section class="relative py-16 sm:py-20 lg:py-24" id="comparison">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="mb-12 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Astro vs WordPress: The Future of Web</h2>
+      <p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
+        Discover why Astro is revolutionizing web development and leaving WordPress in the dust.
+      </p>
+    </div>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="relative flex flex-col p-8 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-800 dark:to-indigo-900 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+        <h3 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">Astro: The Future is Now</h3>
+        <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+          <li class="flex items-center">
+            <Icon name="tabler:rocket" class="w-6 h-6 mr-3 text-blue-500" />
+            <span>Blazing fast load times, delighting users and search engines alike</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:search" class="w-6 h-6 mr-3 text-blue-500" />
+            <span>Built-in SEO optimization, no plugins required</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:code" class="w-6 h-6 mr-3 text-blue-500" />
+            <span>Minimal JavaScript, maximum performance and security</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:brush" class="w-6 h-6 mr-3 text-blue-500" />
+            <span>Flexible and customizable, perfect for unique designs</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:device-laptop" class="w-6 h-6 mr-3 text-blue-500" />
+            <span>Modern tech stack, future-proofing your website</span>
+          </li>
+        </ul>
+      </div>
+      <div class="relative flex flex-col p-8 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-slate-800 dark:to-gray-900 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+        <h3 class="text-3xl font-bold text-gray-600 dark:text-gray-400 mb-6">WordPress: The Legacy Platform</h3>
+        <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+          <li class="flex items-center">
+            <Icon name="tabler:clock-hour-1-filled" class="w-6 h-6 mr-3 text-gray-500" />
+            <span>Slower load times due to database queries and bloated themes</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:puzzle" class="w-6 h-6 mr-3 text-gray-500" />
+            <span>Reliance on SEO plugins, often slowing down your site</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:plug" class="w-6 h-6 mr-3 text-gray-500" />
+            <span>Heavy dependence on plugins, increasing complexity and security risks</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:template" class="w-6 h-6 mr-3 text-gray-500" />
+            <span>Limited design flexibility without extensive customization</span>
+          </li>
+          <li class="flex items-center">
+            <Icon name="tabler:bug" class="w-6 h-6 mr-3 text-gray-500" />
+            <span>Frequent updates and security patches required</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400;
+  }
+</style>

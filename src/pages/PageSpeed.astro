@@ -1,0 +1,90 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<section class="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800" id="performance">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+        Astro: <span class="text-blue-600 dark:text-blue-400">Redefining Web Performance</span>
+      </h2>
+      <p class="max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-300">
+        Experience lightning-fast load times and seamless user experiences that leave traditional platforms in the dust.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Blazing Fast Load Times</h3>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg font-medium text-blue-600 dark:text-blue-400">Astro</span>
+            <span class="text-lg font-medium text-blue-600 dark:text-blue-400">0.5s</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 95%"></div>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-base text-gray-600 dark:text-gray-400">WordPress</span>
+            <span class="text-base text-gray-600 dark:text-gray-400">2.5s</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+            <div class="bg-gray-400 h-3 rounded-full" style="width: 40%"></div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Lightweight Pages</h3>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-lg font-medium text-blue-600 dark:text-blue-400">Astro</span>
+            <span class="text-lg font-medium text-blue-600 dark:text-blue-400">~100KB</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <span class="text-base text-gray-600 dark:text-gray-400">WordPress</span>
+            <span class="text-base text-gray-600 dark:text-gray-400">~1MB</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+            <div class="bg-gray-400 h-3 rounded-full" style="width: 30%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-lg">
+        <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Why Astro Outperforms</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <Icon name="tabler:rocket" class="w-6 h-6 text-blue-500 mt-1 mr-3" />
+            <div>
+              <h4 class="font-semibold text-gray-900 dark:text-white">Static Site Generation</h4>
+              <p class="text-gray-600 dark:text-gray-300">Pre-rendered pages for instant load times</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <Icon name="tabler:devices" class="w-6 h-6 text-blue-500 mt-1 mr-3" />
+            <div>
+              <h4 class="font-semibold text-gray-900 dark:text-white">Minimal JavaScript</h4>
+              <p class="text-gray-600 dark:text-gray-300">Lean, efficient code that doesn't bloat your site</p>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <Icon name="tabler:refresh" class="w-6 h-6 text-blue-500 mt-1 mr-3" />
+            <div>
+              <h4 class="font-semibold text-gray-900 dark:text-white">Smart Caching</h4>
+              <p class="text-gray-600 dark:text-gray-300">Intelligent asset management for repeat visitors</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        Supercharge Your Website
+        <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+      </a>
+    </div>
+  </div>
+</section>

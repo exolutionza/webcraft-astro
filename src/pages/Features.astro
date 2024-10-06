@@ -1,0 +1,78 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+<section class="relative" id="features">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
+      <div class="mb-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Why Choose Us for Your Website?</h2>
+        <p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
+          We build stunning websites from scratch using Astro, delivering superior performance and customization.
+        </p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch my-12 dark:text-white">
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:rocket" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">Unmatched Speed</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            Our Astro-powered sites load instantly, outperforming clunky WordPress sites and generic website builders.
+          </p>
+        </div>
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:brush" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">Tailored Design</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            We craft unique designs from the ground up, avoiding the cookie-cutter look of templates and page builders.
+          </p>
+        </div>
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:device-laptop" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">Future-Proof Tech</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            By using Astro, we ensure your site stays modern and maintainable, unlike outdated CMS platforms.
+          </p>
+        </div>
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:search" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">SEO Advantage</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            Our custom-built sites offer better SEO potential than bloated, plugin-heavy WordPress alternatives.
+          </p>
+        </div>
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:lock" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">Enhanced Security</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            Astro's static output means fewer vulnerabilities compared to dynamic CMS systems like WordPress.
+          </p>
+        </div>
+        <div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded-xl shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+          <div class="flex items-center mb-4">
+            <Icon name="tabler:arrows-maximize" class="w-12 h-12" />
+            <div class="ml-4 text-xl font-bold">Scalable Solution</div>
+          </div>
+          <p class="text-gray-500 dark:text-gray-400 text-md flex-grow">
+            Our Astro sites easily grow with your business, without the limitations of drag-and-drop website builders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full py-3 px-6 text-base font-semibold transition duration-300 ease-in-out;
+  }
+</style>
